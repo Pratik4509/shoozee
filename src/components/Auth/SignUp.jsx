@@ -33,7 +33,7 @@ const SignUp = () => {
         if (name && email && password) {
             console.log('2if')
             dispatch(registerUser({ name, email, password }))
-            dispatch(saveDataToFirebase({ name, email, password }))
+            // dispatch(saveDataToFirebase({ name, email, password }))
             dispatch(loginUser({ name, email, password }))
             setEmail('')
             setName('')

@@ -50,9 +50,9 @@ const Login = () => {
         }
 
     }
-    useEffect(() => {
-        console.log(dispatch(getDataFromFirebase()))
-    },[])
+    // useEffect(() => {
+    //     console.log(dispatch(getDataFromFirebase()))
+    // },[])
     return (
         <div>
             <form action="" onSubmit={e=>handleLogin(e)} className={styles.formContainer}>
