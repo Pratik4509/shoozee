@@ -16,7 +16,7 @@ const cartSlice = createSlice({
                         if(cartItem.productData.id === action.payload.productData.id){
                             return cartItem.qty = cartItem.qty + action.payload.qty
                         }
-                        return
+                        return null;
                     })
                 }
                 else{

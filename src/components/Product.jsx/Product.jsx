@@ -20,8 +20,8 @@ const Product = () => {
         progress: undefined,
         theme: "light",
         });
-    const id = useParams().productId;
-    const productData = data.filter(d => d.id == id)
+    const id = Number(useParams().productId);
+    const productData = data.filter(d => d.id === id)
     const [displayImage, setDisplayImage] = useState(productData[0].img)
     const [qty, setQty] = useState(0);
     const dispatch = useDispatch();

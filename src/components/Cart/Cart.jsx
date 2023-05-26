@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Cart.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { FiMinusCircle } from "react-icons/fi";
 import { removeFromCart } from '../../store/cartSlice';
-import Checkout from '../Checkout/Checkout';
 
 const Cart = ({ setShowCart }) => {
     const cartItemsAll = useSelector(state => state.cart.cartItems)
@@ -45,7 +44,6 @@ const Cart = ({ setShowCart }) => {
             <p>Subtotal: ₹{subTotal}</p>
             <p>Tax: ₹0</p>
             <h3>Total: ₹{subTotal}</h3>
-            {/* <Checkout/> */}
         </div> : <div>No Items</div>}
 
         </>

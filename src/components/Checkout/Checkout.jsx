@@ -1,15 +1,11 @@
-import ReactDOM from 'react-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import {
     CardElement,
     Elements,
-    useStripe,
     useElements,
 } from '@stripe/react-stripe-js';
 
 import stripe from 'stripe';
-
-
 const CheckoutForm = () => {
    
     const elements = useElements();

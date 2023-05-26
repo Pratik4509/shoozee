@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../assets/png/logo-no-background.png';
 import styles from './Auth.module.css'
 import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { loginUser, registerUser } from '../../store/authSlice';
 import { useNavigate } from 'react-router-dom';
