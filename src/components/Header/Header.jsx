@@ -43,8 +43,8 @@ const dispatch = useDispatch()
                         {userData.length > 0 ?
                             <span className={styles.userIcon}>
                                 <FiUser />
-                                <span>{userData[0].name}</span>
-                                <button onClick={()=>dispatch(logOut())}>Logout</button>
+                                <span className={styles.userName}>{userData[0].name}</span>
+                                <button onClick={()=>dispatch(logOut())} className={styles.loginButton}>Logout</button>
                             </span> :
                             <button className={styles.loginButton}><Link to={'/login'}>Login/SignUp</Link></button>}
                     </div>

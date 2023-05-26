@@ -38,3 +38,17 @@
     align-items:center;
 
 } */
+
+@media only screen and (max-width: 600px) {
+    .cartWrapper{
+        position: absolute;
+        background: hsla(0, 0%, 20%, 0.977);
+        width: 90%;
+        z-index: 1000;
+        text-align: right;
+        color: #fff;
+        padding: 20px;
+        top: 55px;
+        right: 0px;
+    }
+}

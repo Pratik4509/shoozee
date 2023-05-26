@@ -74,13 +74,13 @@ const Product = () => {
                     </div>
                     <label htmlFor="qty"><b>Enter Quantity</b></label>
                     <div className={styles.qty}>
-                        <div style={{cursor:'pointer'}} className={styles.qtyButton} onClick={()=>setQty(p=>p+1)}>+</div>
-                        <input id='qty' type="text" value={qty} readOnly/>
                         {
                             qty>0 
                             ? <div style={{cursor:'pointer'}} className={styles.qtyButton} onClick={()=>setQty(p=>p-1)}>-</div>
                             : <div style={{cursor:'pointer'}} className={styles.qtyButton} disabled={true}>-</div>
                         }
+                        <input id='qty' type="text" value={qty} readOnly/>
+                        <div style={{cursor:'pointer'}} className={styles.qtyButton} onClick={()=>setQty(p=>p+1)}>+</div>
                     </div>
                     <button className={styles.addToCart} onClick={handleAddToCart}>Add to Cart</button>
                     <p>{productData[0].description}</p>

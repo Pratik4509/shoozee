@@ -75,7 +75,7 @@ ul{
     background: #111;
     transition: 0.5s;
     padding: .5rem 1rem;
-    margin: 0 0 0 5rem;
+    /* margin: 0 0 0 5rem; */
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -83,7 +83,9 @@ ul{
 .loginButton a {
     color: inherit
 }
-
+.userName{
+    margin-right: 10px;
+}
 @media only screen and (max-width: 600px) {
     header {
         display: flex;
@@ -114,5 +116,14 @@ ul{
     }
     header ul li:nth-child(3){
         display: none;
+    }
+
+    .user{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end ;
+        width: 40.3%;
+        float: right;
+        padding: 0 40px 0 0;
     }
 }
