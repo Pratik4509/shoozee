@@ -4,11 +4,13 @@ import styles from './Auth.module.css'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { loginUser } from '../../store/authSlice';
+import { getDataFromFirebase, loginUser } from '../../store/authSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 const Login = () => {
+
     const notify = (msg) => toast.error(msg, {
         position: "top-right",
         autoClose: 5000,
@@ -46,7 +48,11 @@ const Login = () => {
         else if (password === '') {
             notify('Please enter password')
         }
+
     }
+    useEffect(() => {
+        console.log(dispatch(getDataFromFirebase()))
+    },[])
     return (
         <div>
             <form action="" onSubmit={e=>handleLogin(e)} className={styles.formContainer}>
