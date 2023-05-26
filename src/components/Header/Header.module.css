@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 1px solid #ccc; */
+    padding: .5em 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 27.3%;
+    height: 20px;
+    float:left;
+}
+.logo img{
+    display: block;
+    transform: translate(-0%, -30%);
+    width: 40%;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    width: 33.3%;
+}
+
+.user{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end ;
+    width: 23.3%;
+    float: right;
+    padding: 0 40px 0 0;
+}
+
+.user .cart {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.auth{
+    /* font-size: 24px; */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.user .userIcon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.loginButton{
+    width: auto;
+    height: auto;
+    /* color: #fff; */
+    background: #fff;
+    transition: 0.5s;
+    padding: .5rem 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.loginButton:hover{
+    color: #fff !important;
+    background: #111;
+    transition: 0.5s;
+    padding: .5rem 1rem;
+    margin: 0 0 0 5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.loginButton a {
+    color: inherit
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5em 0;
+        height: fit-content;
+        flex-wrap: wrap;
+        overflow: visible;
+
+    }
+    .logo { 
+        width: 70%;
+        height: auto;
+        
+    }
+    .logo img{
+        display: block;
+    width: 60%;
+    padding: 0px 0px;
+    margin: auto;
+    transform: translate(0%, 0%);
+    }
+
+    header ul li:nth-child(2){
+        display: none;
+    }
+    header ul li:nth-child(3){
+        display: none;
+    }
+}
